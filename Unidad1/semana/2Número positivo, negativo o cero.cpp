@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+/* Programa que determina si un número es positivo, negativo o cero */
+
+int main() {
+    int numero;
+
+    cout << "Ingresa un número: ";
+    cin >> numero;
+
+    if (numero > 0) {
+        cout << "El número es positivo." << endl;
+    } else if (numero < 0) {
+        cout << "El número es negativo." << endl;
+    } else {
+        cout << "El número es cero." << endl;
+    }
+
+    return 0;
+}
