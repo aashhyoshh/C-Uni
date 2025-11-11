@@ -15,15 +15,15 @@ const double TIPO_CAMBIO = 19.50;
             cout << "El area del triángulo es: " << (base * altura) / 2 << endl;
         }
 
-        void dolaresAPesos(double dolares){
-            cout << "En pesos es: " << dolares * TIPO_CAMBIO << endl;
+        void dolaresAPesos(double dolares, double tipodecambio){
+            cout << "En pesos es: " << dolares * tipodecambio << endl;
         }
 
         void centigradosAFahrenheit(double gradosC){
             cout << "La temperatura en Fahrenheit es: " << (gradosC * 9/5) + 32 << endl;
         }
 
-//funciones de los disque menus
+//funciones de los menus
 
         void menuAreas(){
             int Op;
@@ -60,7 +60,7 @@ const double TIPO_CAMBIO = 19.50;
 
         void menuConversiones(){
             int op;
-            double cantidad, grados;
+            double cantidad, grados, tipodecambio;
 
             do {
                 cout << "--- CONVERSIONES ---" << endl;
@@ -74,7 +74,9 @@ const double TIPO_CAMBIO = 19.50;
                     case 1:
                         cout << "Ingrese la cantidad en dolares: ";
                         cin >> cantidad;
-                            dolaresAPesos(cantidad);
+                        cout << "Ingrese tipo de cambio";
+                        cin >> tipodecambio;
+                            dolaresAPesos(cantidad,tipodecambio);
                         break;
                     case 2:
                         cout << "Ingrese los grados centigrados: ";
