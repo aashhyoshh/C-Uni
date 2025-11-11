@@ -74,7 +74,7 @@ const double TIPO_CAMBIO = 19.50;
                     case 1:
                         cout << "Ingrese la cantidad en dolares: ";
                         cin >> cantidad;
-                        cout << "Ingrese tipo de cambio";
+                        cout << "Ingrese tipo de cambio: ";
                         cin >> tipodecambio;
                             dolaresAPesos(cantidad,tipodecambio);
                         break;
