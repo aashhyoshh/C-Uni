@@ -12,14 +12,14 @@ const double TIPO_CAMBIO = 19.50;
         }
 
         void areaTriangulo(double base, double altura){
-            cout << "El area del triángulo es: " << (base * altura) / 2 << endl;
+            cout << "El area del triángulo es: " << base * altura / 2 << endl;
         }
 
         void dolaresAPesos(double dolares, double tipodecambio){
             cout << "En pesos es: " << dolares * tipodecambio << endl;
         }
 
-        void centigradosAFahrenheit(double gradosC){
+        void centigradosAFahrenheit(float gradosC){
             cout << "La temperatura en Fahrenheit es: " << (gradosC * 9/5) + 32 << endl;
         }
 
@@ -83,7 +83,7 @@ const double TIPO_CAMBIO = 19.50;
                         cin >> grados;
                             centigradosAFahrenheit(grados);
                         break;
-                    case 3:
+                    case 4:
                         cout << "Regresando al menu principal..." << endl;
                         break;
                 }
