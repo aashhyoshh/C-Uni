@@ -22,7 +22,7 @@ int main (){
     do {
         cout << "¿Quieres que te salude?: ";
         cout << "¿Quieres ver tu sueldo de pobre?: ";
-        cin >> opcion
+        cin >> opcion;
 
         switch (opcion) {
             case 1 :
