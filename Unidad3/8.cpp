@@ -7,7 +7,7 @@ int main(){
 
     int arreglo1 [5];
     int arreglo2 [5];
-    int arreglo3 [5];
+    int arreglo3 [10];
 
     for (int i = 0; i < 5; i++){
         cout << "Ingresa el numero " << i + 1 << " del primer arreglo: ";
@@ -19,18 +19,15 @@ int main(){
         cin >> arreglo2[i];
     }
 
-    for (int i = 0; i < 10; i++){
-        if (i < 5){
-            arreglo3[i] = arreglo1[i];
-        } else {
-            arreglo3[i] = arreglo2[i - 5];
-        }
+    for (int i = 0; i < 5; i++){
+        arreglo3[i] = arreglo1[i];
+    }
+    for (int i = 0; i < 5; i++){
+        arreglo3[i+5] = arreglo2[i];
     }
   
     for (int i = 0; i < 10; i++){
-        cout << arreglo3[i] << endl;
-
-        cout << "El tercer arreglo es: " << arreglo3 << i + 1  << endl;
+        cout << "El tercer arreglo es: " << arreglo3[i]  << endl;
     }
 
         
