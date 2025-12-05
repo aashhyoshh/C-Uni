@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
 
-//crea una matriz de 3 por 3 pide que se llenen con numeros y sumalos.
-
 int main(){
 
     int matriz [3][3];
-    int suma = 0;
+    int sumaCol = 0;
 
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
-                    cout << "ingresa [" << i << "][" << j << "]: ";
-                    cin >> matriz[i][j]; 
-                    suma += matriz[i][j];
-                    
-            }
+                cout << "Ingresa  [" << i << "][" << j << "]";
+                cin >> matriz[i][j];
+            } 
         }
 
 
         cout << "\nLa matriz es: \n";
-
         for (int i = 0; i <3; i++){
             for (int j = 0; j < 3; j++){
                 
@@ -28,7 +23,14 @@ int main(){
             cout << endl;
         }
 
-        cout << "La suma es: " << suma;
+        
+        for (int j = 0; j < 3; j++){
+            sumaCol = 0;
+            for (int i = 0; i < 3; i++){
+                sumaCol += matriz[i][j];
+            }
+            cout << "La suma de la columna " << j << " es: " << sumaCol << endl;
+        }
 
 
 }
